@@ -3,8 +3,7 @@ layout: default
 ---
 
 <article>
-  <h2>{{ post.title }}</h2>
-  <h3>Subtitle goes down here</h3>
-  <p class="time">Posted on <time pubdate="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
-  <p>{{ content }}</p>
+  <h2>{{ page.title }}</h2>
+  <p class="time">Posted on <time pubdate="{{ page.date }}">{{ page.date | date_to_string }}</time></p>
+  {{ content }}
 </article>
