@@ -5,8 +5,8 @@ title: Home
 
 {% for post in site.posts limit:5 %}
 <article>
-  <h2>{{ post.title }}</h2>
+  <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
   <p class="time">Posted on <time pubdate="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></p>
-  <p>{{ post.content }}</p>
+  {{ post.content }}
 </article>
 {% endfor %}
