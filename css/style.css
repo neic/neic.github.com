@@ -61,3 +61,6 @@ footer{
     font-size: small;
     color: #656555;
 }
+code{
+    background: #4f4f4f;
+}
