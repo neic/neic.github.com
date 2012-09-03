@@ -3,13 +3,13 @@ layout: post
 title: Add terminfo entries on Linux
 ---
 
-I did SSH into my server running Ubuntu 10.10 from my laptop running Arch Linux with a rxvt-unicode terminal and received the following error when I tried to run "screen": "Cannot find terminfo entry for "rxvt-unicode-256color"." or when i tried to do a "clear": "rxvt-unicode-256color": unknown terminal type."
+I did SSH into my server running Ubuntu 10.10 from my laptop running Arch Linux with a rxvt-unicode terminal and received the following error when I tried to run `screen`: `Cannot find terminfo entry for 'rxvt-unicode-256color'.` or when i tried to do a `clear`: `'rxvt-unicode-256color': unknown terminal type.`
 
 To add the terminfo entry you can take the the terminfo from rxvt-unicode and add it to a file:
 {% highlight bash %}
    infocmp -L rxvt-unicode > rxvt-unicode-256color.terminfo
 {% endhighlight %}
-Change the following two lines in the "rxvt-unicode-256color.terminfo" file
+Change the following two lines in the `rxvt-unicode-256color.terminfo` file
 {% highlight bash %}
     rxvt-unicode|rxvt-unicode terminal (X Window System),
     [...]
