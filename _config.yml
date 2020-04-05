@@ -1,1 +1,10 @@
-pygments: true
+title: Mathias Dannesbo
+email: neic@neic.dk
+#description:
+url: "https://neic.dk"
+twitter_username: neic
+github_username:  neic
+
+theme: minima
+plugins:
+  - jekyll-feed
