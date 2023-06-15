@@ -3,7 +3,9 @@ email: neic@neic.dk
 #description:
 url: "https://neic.dk"
 twitter_username: neic
-github_username:  neic
+github_username: neic
+
+include: [".well-known"]
 
 theme: minima
 plugins:
